@@ -28,7 +28,7 @@ function! ctrlp#projectdir#init()
   redir => l:list
   call projectdir#showlist()
   redir END
-  let s:list = split(l:list, "\n")[1:]
+  let s:list = split(l:list, "\n")
   return s:list
 endfunc
 
